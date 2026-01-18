@@ -427,7 +427,7 @@ app.post('/api/consult', async (req, res) => {
 });
 
 // Rota catch-all para servir o index.html em qualquer rota que não seja /api
-app.get('*', (req, res) => {
+app.get('(.*)', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
