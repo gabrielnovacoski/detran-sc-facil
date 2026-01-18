@@ -4,6 +4,9 @@ import puppeteer from 'puppeteer';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+const app = express();
+const log = console.log;
+
 app.use(cors());
 app.use(express.json());
 
